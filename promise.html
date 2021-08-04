@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // const func1 = () =>{
+    //     return new Promise(function(resolve,reject){
+    //         setTimeout(() =>{
+    //             const error = false;
+    //             if(!error){
+    //                 console.log('Function : Your promise has been resolved');
+    //             }
+    //             else{
+    //                 console.log("Your promise got rejected")
+    //                 reject('Not fulfilled');
+    //             }
+    //         },2000);
+    //     })
+    // }
+    // func1().then(function(){
+    //     console.log("Resolved");
+    // }).catch(function(error){
+    //     console.log("Not Resolved "+error);
+    // })
+    const fun1 = () =>{
+        return new Promise(function(resolve,reject){
+            const x=1;
+            if(x===0){
+                console.log("Promise resolved");
+            }else{
+                console.log("Promise rejected");
+                reject('Not fulfilled');
+            }
+        })
+    }
+    fun1().then(function(){
+        console.log("Resolved");
+    }).catch(function(error){
+        console.log("Not resolved ",+error);
+    })
+</script>
+</html>

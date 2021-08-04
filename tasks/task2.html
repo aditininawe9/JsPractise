@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const mark = {
+        fullName: "Mark Zukerberg",
+        mass: 62,
+        height: 6.2,
+        calcBMI : function(){
+            this.bmi = this.mass / this.height ** 2;
+            return this.bmi;
+        }
+    };
+    const john = {
+        fullName: "John ",
+        mass: 75,
+        height: 5,
+        calcBMI : function(){
+            this.bmi = this.mass / this.height ** 2;
+            return this.bmi;
+        }
+    };
+    mark.calcBMI();
+    john.calcBMI();
+    console.log(mark.bmi,john.bmi);
+
+    if(mark.bmi > john.bmi){
+        console.log(`${mark.fullName}'s BMI is larger than ${john.fullName}`)
+    }else{
+        console.log(`${john.fullName}'s BMI is larger than ${mark.fullName}`)
+    }
+</script>
+
+</html>

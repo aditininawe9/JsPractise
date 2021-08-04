@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+
+    </div>
+</body>
+<script>
+//  callback
+// const func1 = () =>{
+//     var a = 10, b = 11;
+//     var add = a + b
+//     console.log(add)
+// }
+// const func2 = (a , b, callback ) =>{
+//     const lists = ['book','paper','pen'];
+//     var list2 = lists.push('pencil');
+//     callback(list2)
+// }
+// func2(12,10,func1);
+
+// promises
+//     let myPromise = new Promise(function (resolve, reject) {
+//         const a = 1;
+//         if (a == 0) {
+//             resolve("ok")
+//         } else {
+//             reject("not ok")
+//         }
+//     })
+// myPromise.then(function(){
+//     console.log("Resolved")
+// }).catch(function(error){
+//     console.log("Not resolved ",+error);
+// }) 
+// async/await -->
+async function display(){
+let myPromise = new Promise(function(resolve,reject){
+    resolve('hello')
+});
+document.getElementById("demo").innerHTML = await myPromise;
+}
+display();
+</script>
+
+</html>

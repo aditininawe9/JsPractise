@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const dolphins = (97+112+101)/3;
+    const koalas = (109 +95+123)/3;
+    console.log(dolphins,koalas)
+    // if(dolphins > koalas){
+    //     console.log(`dolphins are the WINNER with average score of ${dolphins}`);
+    // }
+    // else if( dolphins === koalas){
+    //     console.log("draw");
+    // }
+    // else{
+    //     console.log(`koalas are the WINNER with average score of ${koalas}`)
+    // }
+
+    if(dolphins > koalas && dolphins >= 100){
+        console.log(`dolphins are the WINNER with average score of ${dolphins}`);
+    }
+    else if( koalas > dolphins && koalas >= 100){
+        console.log(`koalas are the WINNER with average score of ${koalas}`);
+    }
+    else if( koalas === dolphins){
+        console.log(`Draw`);
+    }
+    else{
+        console.log(`koalas are the WINNER with average score of ${koalas}`)
+    } 
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Button</button>
+    <button>Fetch api</button>
+    <div id="content"></div>
+</body>
+<script>
+    let mybtn = document.getElementById("btn")
+    let content = document.getElementById("content")
+
+    // function getData(){
+    //     url="aditi.txt";
+    //     fetch(url).then((response)=>{
+    //         return response.text();
+    //     }).then((data)=>{
+    //         console.log(data)
+    //     })
+    // }
+    
+    //     function getData(){
+    //     url="https://api.github.com/users";
+    //     fetch(url).then((response)=>{
+    //         return response.json();
+    //     }).then((data)=>{
+    //         console.log(data)
+    //     })
+    // }
+
+    function postData(){
+        url="http://dummy.restapiexample.com/api/v1/create";
+        data = '{"name":"aditi78548","salary":"123","age":"23"}'
+        params = {
+            method : 'post',
+            headers : {
+                'Content-Type':'application/json'
+            },
+            body:data
+        }
+        fetch(url,params).then(response=>response.json())
+        .then(data=>console.log(data)
+        )
+    }
+
+    postData();
+</script>
+</html>
