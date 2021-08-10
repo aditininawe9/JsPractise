@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const whereAmI = (lat, lng) => {
+      fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+        .then((res) => {
+          if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
+        })
+        .then((response) => response.json)
+        .then((data) => console.log(data));
+      console.log(`You are in ${data.city},${data.country}`);
+    };
+
+    whereAmI(52.508, 13.381);
+  </script>
+</html>

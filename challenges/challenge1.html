@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea class="textarea"></textarea>
+    <button class="poll">start</button>
+  </body>
+  <script>
+    // const markMass = 78,
+    //   johnMass = 92;
+    // const markheight = 1.699,
+    //   johnHeight = 1.95;
+    // let markBMI, johnBMI;
+
+    // markBMI = markMass / markheight ** 2;
+    // johnBMI = johnMass / (johnHeight * 2);
+    // console.log(markBMI, johnBMI);
+    // if (markBMI > johnBMI) {
+    //   console.log(`Marks' BMI is ${markBMI} higher than john`);
+    // } else {
+    //   console.log(`John's BMI is ${johnBMI} larger than mark`);
+    // }
+    // const dolphins = (96 + 108 + 89) / 3;
+    // const koalas = (88 + 91 + 110) / 3;
+    // console.log(dolphins, koalas);
+    // if (dolphins > koalas) {
+    //   console.log(`Dolphins win with the average score of ${dolphins}`);
+    // } else if (dolphins < koalas) {
+    //   console.log(`Koalas win with the average score of ${Koalas}`);
+    // } else {
+    //   console.log(`Draw`);
+    // }
+    // const bill = 275;
+    // const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    // console.log(
+    //   `The bill was ${bill} , the tip was ${tip} , and total value ${
+    //     bill + tip
+    //   }`
+    // );
+
+    //Functions
+    // const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+    // const avgDolphins = calcAverage(44, 23, 71);
+    // console.log(avgDolphins);
+    // const avgKoalas = calcAverage(65, 54, 49);
+    // console.log(avgKoalas);
+
+    // const checkWinner = (avgDolphins, avgKoalas) => {
+    //   if (avgDolphins >= 2 * avgKoalas) {
+    //     console.log(`Dolphins win with the average score of ${avgDolphins}`);
+    //   } else if (avgKoalas >= 2 * avgDolphins) {
+    //     console.log(`Dolphins win with the average score of ${avgDolphins}`);
+    //   }
+    // };
+    // checkWinner(avgDolphins, avgKoalas);
+    // checkWinner(578, 685);
+
+    // const bill = 275;
+    // const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    // console.log(
+    //   `The bill was ${bill} , the tip was ${tip} , and total value ${
+    //     bill + tip
+    //   }`
+    // );
+
+    // const calcTip = (bill) => {
+    //   const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    //   `The bill was ${bill} , the tip was ${tip} , and total value ${
+    //     bill + tip
+    //   }`;
+    //   console.log(tip);
+    // };
+    // calcTip(275);
+
+    // const mark = {
+    //   fullname: "Mark Miller",
+    //   mass: 78,
+    //   height: 1.69,
+    //   calcBMI: function () {
+    //     this.bmi = this.mass / this.height ** 2;
+    //     return this.bmi;
+    //   },
+    // };
+    // const john = {
+    //   fullname: "John Wison",
+    //   mass: 92,
+    //   height: 1.95,
+    //   calcBMi: function () {
+    //     this.bmi = this.mass / this.height ** 2;
+    //     return this.bmi;
+    //   },
+    // };
+    // mark.calcBMI();
+    // console.log(mark.bmi);
+
+    // if (mark.bmi > john.bmi) {
+    //   console.log(
+    //     `${mark.fullname}'s BMI is highher than ${john.fullname}'s BMI`
+    //   );
+    // } else {
+    //   console.log(
+    //     `${john.fullname}'s BMI is highher than ${mark.fullname}'s BMI`
+    //   );
+    // }
+
+    // const calcTip = function (bill) {
+    //   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+    // };
+    // const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+    // const tips = [];
+    // const totals = [];
+
+    // for (let i = 0; i < bills.length; i++) {
+    //   const tip = calcTip(bills[i]);
+    //   tips.push(tip);
+    //   totals.push(tip + bills[i]);
+    // }
+    // console.log(bills, tips, totals);
+
+    // const calcAverg = function (arr) {
+    //   let sum = 0;
+    //   for (let i = 0; i < arr.length; i++) {
+    //     sum += arr[i];
+    //   }
+    //   return sum / arr.length;
+    // };
+    // calcAverg([5, 8, 9]);
+
+    //Array
+    // const game = {
+    //   team1: "Bayern Munich",
+    //   team2: "Borrussia Dortmund",
+    //   players: [
+    //     [
+    //       "Neuer",
+    //       "Pavard",
+    //       "Martinez",
+    //       "Alaba",
+    //       "Davies",
+    //       "Kimmich",
+    //       "Goretzka",
+    //       "Coman",
+    //       "Muller",
+    //       "Gnarby",
+    //       "Lewandowski",
+    //     ],
+    //     [
+    //       "Burki",
+    //       "Schulz",
+    //       "Hummels",
+    //       "Akanji",
+    //       "Hakimi",
+    //       "Weigl",
+    //       "Hazard",
+    //       "Brandt",
+    //       "Sancho",
+    //       "Gotze",
+    //     ],
+    //   ],
+    //   score: "4.0",
+    //   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+    //   date: "Nov 9th 2037",
+    //   odds: {
+    //     team1: 1.33,
+    //     x: 3.25,
+    //     team1: 6.5,
+    //   },
+    // };
+    // //1.
+    // const [players1, players2] = game.players;
+    // console.log(players1, players2);
+
+    // //2.
+    // const [gk, ...fieldPlayers] = players1;
+    // console.log(gk, fieldPlayers);
+
+    // //3.
+    // const allPlayers = [...players1, ...players2];
+    // console.log(allPlayers);
+
+    // //4.
+    // const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"];
+    // console.log(players1Final);
+
+    // //5.
+    // const {
+    //   odds: { team1, x: draw, team2 },
+    // } = game;
+    // console.log(team1, draw, team2);
+
+    // //6.
+    // const printGoals = function (...players) {
+    //   console.log(players);
+    //   console.log(`${players.length} goals were scored`);
+    // };
+    // // printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+    // // printGoals("Davies", "Muller");
+    // printGoals(...game.scored);
+
+    // //7.
+    // team1 < team2 && console.log("Team1  is more likely to win");
+    // team1 > team2 && console.log("Team2  is more likely to win");
+
+    // const gameEvents = new Map([
+    //   [17, "Goal"],
+    //   [36, "Subcription"],
+    //   [47, "Goal"],
+    //   [61, "Subscription"],
+    //   [64, "Yellow card"],
+    //   [69, "Red card"],
+    //   [70, "Subscription"],
+    //   [72, "Subscription"],
+    //   [76, "Goal"],
+    //   [80, "Goal"],
+    //   [92, "Yellow card"],
+    // ]);
+    // console.log(gameEvents.values());
+    // //1.
+    // const events = [...new Set(gameEvents.values())];
+    // console.log(events);
+
+    // //2.
+    // gameEvents.delete(64);
+
+    // //3.
+    // console.log(
+    //   `An event happened , on average, every ${90 / gameEvents.size} minutes`
+    // );
+    // const time = [...gameEvents.keys()].pop();
+    // console.log(time);
+    // console.log(`An event happend on every ${time / gameEvents.size} minutes`);
+
+    // //4.
+    // for (const [min, event] of gameEvents) {
+    //   const half = min <= 45 ? "FIRST" : "SECOND";
+    //   console.log(`[${half}HALF] ${min} : ${event}`);
+    // }
+
+    //Strings
+
+    // document.body.append(document.createElement("textarea"));
+    // document.body.append(document.createElement("button"));
+
+    // document.querySelector("button").addEventListener("click", function () {
+    //   const text = document.querySelector("textarea").value;
+    //   console.log(text);
+    // });
+
+    //Closer look on functions
+
+    const poll = {
+      question: "What is your favorite programming language?",
+      options: ["0:JS", "1:Python", "2:Rust", "3:C++"],
+
+      answers: new Array(4).fill(0),
+      registerNewAnswer() {
+        const answer = Number(
+          prompt(
+            `${this.question}\n${this.options.join(
+              "\n"
+            )}\n(Write option number)`
+          )
+        );
+        console.log(answer);
+        typeof answer === "number" &&
+          answer < this.answers.length &&
+          this.answers[answer]++;
+
+        this.displayResults();
+        this.displayResults("string");
+        console.log(this.answers);
+      },
+      displayResults(type = "array") {
+        if (type === "array") {
+          console.log(this.answers);
+        } else if (type === "string") {
+          console.log(`Poll results are ${this.ansers.join(", ")}`);
+        }
+      },
+    };
+    //poll.registerNewAnswer();
+    document
+      .querySelector(".poll")
+      .addEventListener("click", poll.registerNewAnswer.bind(poll));
+  </script>
+</html>
